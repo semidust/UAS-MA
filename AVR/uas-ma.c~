@@ -216,9 +216,7 @@ lcd_init(16);
 while (1)
       {
       on = !PINA.1;
-
-
-
+      
       //clock logic
       if (on && mins == 0 && sec == 0){
        speaker();

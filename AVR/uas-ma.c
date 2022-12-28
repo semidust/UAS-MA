@@ -69,9 +69,14 @@ void ubahmins()
 void ubahlap()
 {
  if (PINA.2==0) {
+       if (n>=4) {
+       n = 0;
+       lcd_clear();
+       }
+
        lcd_gotoxy(0,n);
        lap = lap + 1;
-       lcd_printf("LAP %d : %d m %d s",lap,angka[mins],angka[sec]);
+       lcd_printf("LAP %d : %d m %d s",lap,mins,sec);
        n = n + 1;
  }
  else if (PINA.3==0) {

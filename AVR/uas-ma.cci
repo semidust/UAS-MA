@@ -1,4 +1,4 @@
-VERSION:3 SOURCE_TIMESTAMP:559C88E4
+VERSION:3 SOURCE_TIMESTAMP:559C89AD
 NODE:I LEVEL:0 LINE:2 "C:\cvavreval\inc\mega32.h"
 NODE:I LEVEL:0 LINE:3 "C:\cvavreval\inc\stdbool.h"
 NODE:I LEVEL:0 LINE:4 "C:\cvavreval\inc\delay.h"
@@ -27,5 +27,5 @@ NODE:F LEVEL:0 LINE:38 "tampildata(void)"
 NODE:F LEVEL:0 LINE:43 "ubahsec(void)"
 NODE:F LEVEL:0 LINE:56 "ubahmins(void)"
 NODE:F LEVEL:0 LINE:69 "ubahlap(void)"
-NODE:F LEVEL:0 LINE:84 "speaker(void)"
-NODE:F LEVEL:0 LINE:95 "main(void)"
+NODE:F LEVEL:0 LINE:89 "speaker(void)"
+NODE:F LEVEL:0 LINE:100 "main(void)"
