@@ -43,6 +43,15 @@ void tampildata(){
  PORTD = angka[sec];
 }
 
+void lap(){
+ lcd_clear();
+ lcd_gotoxy(0,0);
+ 
+ for (i=1; i<=4; i++) {
+    lcd_printf("LAP %d : %dm %ds\n",i,angka[mins],angka[sec]);
+ } 
+}
+
 
 void main(void)
 {
@@ -169,15 +178,7 @@ while (1)
       {
       on = !PINA.1;
       
-      if(prev_on != on){
-       if (on) strcpy(str1, "Timer is running..");
-       else strcpy(str1, "Timer has stopped."); 
-       
-       lcd_gotoxy(0,0);
-       lcd_puts(str1);
-       
-       prev_on = on;
-      }
+      
       
       //clock logic
       if (on && !(mins <= 0 && sec <= 0)){
@@ -191,7 +192,12 @@ while (1)
         sec = 0;
        }
        delay_ms(70);
+        
+       if (PINA.3 ==  0) {
+        lap();
+       }
       }
       tampildata();
       }
+      
 }
