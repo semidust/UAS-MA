@@ -88,7 +88,7 @@ void speaker ()
         PORTC.3=0;
         delay_us(1000);
         PORTC.3=1;
-        delay_us(10);
+        delay_us(1000);
     }
 }
 
@@ -220,24 +220,28 @@ while (1)
 
 
       //clock logic
+      if (on && mins == 0 && sec == 0){
+       speaker();
+      }
+      
       if (on && !(mins <= 0 && sec <= 0)){
        sec--;
-
+       
        if (sec < 0){
         mins--;
         sec = 59;
        }
        if (mins < 0){
         sec = 0;
-        speaker();
        }
 
-       delay_ms(1000);
+       delay_ms(1200);
       }
+
       if (!on){
           ubahsec();
           ubahmins();
-          delay_ms(15);
+          delay_ms(260);
       }
       ubahlap();
       tampildata();
