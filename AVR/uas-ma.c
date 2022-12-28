@@ -9,7 +9,7 @@
 #include <alcd.h>
 
 // Declare your global variables here
-short mins = 0, sec = 5, lap = 0, n = 0, prev1, prev2;
+short mins = 0, sec = 0, lap = 0, n = 0, prev1, prev2;
 bool on = true,   prev_on  = false;
 bool lap_btn = 1;
 bool toggle = 1;

@@ -1,16 +1,16 @@
 
-AVRASM ver. 2.1.30  D:\kuliah\sem 3\lab ma\UAS\UAS-MA\AVR\Debug\List\uas-ma.asm Wed Dec 28 16:27:25 2022
+AVRASM ver. 2.1.30  C:\Users\Lenovo\Documents\KULIAH\E-LEARNING\SEMESTER 3\PRAKTEK MA\UAS\UAS-MA\AVR\Debug\List\uas-ma.asm Wed Dec 28 16:34:21 2022
 
-D:\kuliah\sem 3\lab ma\UAS\UAS-MA\AVR\Debug\List\uas-ma.asm(1417): warning: Register r4 already defined by the .DEF directive
-D:\kuliah\sem 3\lab ma\UAS\UAS-MA\AVR\Debug\List\uas-ma.asm(1418): warning: Register r5 already defined by the .DEF directive
-D:\kuliah\sem 3\lab ma\UAS\UAS-MA\AVR\Debug\List\uas-ma.asm(1419): warning: Register r6 already defined by the .DEF directive
-D:\kuliah\sem 3\lab ma\UAS\UAS-MA\AVR\Debug\List\uas-ma.asm(1420): warning: Register r7 already defined by the .DEF directive
-D:\kuliah\sem 3\lab ma\UAS\UAS-MA\AVR\Debug\List\uas-ma.asm(1421): warning: Register r8 already defined by the .DEF directive
-D:\kuliah\sem 3\lab ma\UAS\UAS-MA\AVR\Debug\List\uas-ma.asm(1422): warning: Register r9 already defined by the .DEF directive
-D:\kuliah\sem 3\lab ma\UAS\UAS-MA\AVR\Debug\List\uas-ma.asm(1423): warning: Register r10 already defined by the .DEF directive
-D:\kuliah\sem 3\lab ma\UAS\UAS-MA\AVR\Debug\List\uas-ma.asm(1424): warning: Register r11 already defined by the .DEF directive
-D:\kuliah\sem 3\lab ma\UAS\UAS-MA\AVR\Debug\List\uas-ma.asm(1425): warning: Register r12 already defined by the .DEF directive
-D:\kuliah\sem 3\lab ma\UAS\UAS-MA\AVR\Debug\List\uas-ma.asm(1426): warning: Register r13 already defined by the .DEF directive
+C:\Users\Lenovo\Documents\KULIAH\E-LEARNING\SEMESTER 3\PRAKTEK MA\UAS\UAS-MA\AVR\Debug\List\uas-ma.asm(1417): warning: Register r4 already defined by the .DEF directive
+C:\Users\Lenovo\Documents\KULIAH\E-LEARNING\SEMESTER 3\PRAKTEK MA\UAS\UAS-MA\AVR\Debug\List\uas-ma.asm(1418): warning: Register r5 already defined by the .DEF directive
+C:\Users\Lenovo\Documents\KULIAH\E-LEARNING\SEMESTER 3\PRAKTEK MA\UAS\UAS-MA\AVR\Debug\List\uas-ma.asm(1419): warning: Register r6 already defined by the .DEF directive
+C:\Users\Lenovo\Documents\KULIAH\E-LEARNING\SEMESTER 3\PRAKTEK MA\UAS\UAS-MA\AVR\Debug\List\uas-ma.asm(1420): warning: Register r7 already defined by the .DEF directive
+C:\Users\Lenovo\Documents\KULIAH\E-LEARNING\SEMESTER 3\PRAKTEK MA\UAS\UAS-MA\AVR\Debug\List\uas-ma.asm(1421): warning: Register r8 already defined by the .DEF directive
+C:\Users\Lenovo\Documents\KULIAH\E-LEARNING\SEMESTER 3\PRAKTEK MA\UAS\UAS-MA\AVR\Debug\List\uas-ma.asm(1422): warning: Register r9 already defined by the .DEF directive
+C:\Users\Lenovo\Documents\KULIAH\E-LEARNING\SEMESTER 3\PRAKTEK MA\UAS\UAS-MA\AVR\Debug\List\uas-ma.asm(1423): warning: Register r10 already defined by the .DEF directive
+C:\Users\Lenovo\Documents\KULIAH\E-LEARNING\SEMESTER 3\PRAKTEK MA\UAS\UAS-MA\AVR\Debug\List\uas-ma.asm(1424): warning: Register r11 already defined by the .DEF directive
+C:\Users\Lenovo\Documents\KULIAH\E-LEARNING\SEMESTER 3\PRAKTEK MA\UAS\UAS-MA\AVR\Debug\List\uas-ma.asm(1425): warning: Register r12 already defined by the .DEF directive
+C:\Users\Lenovo\Documents\KULIAH\E-LEARNING\SEMESTER 3\PRAKTEK MA\UAS\UAS-MA\AVR\Debug\List\uas-ma.asm(1426): warning: Register r13 already defined by the .DEF directive
                  
                  
                  ;CodeVisionAVR C Compiler V3.49a 
@@ -1483,18 +1483,18 @@ D:\kuliah\sem 3\lab ma\UAS\UAS-MA\AVR\Debug\List\uas-ma.asm(1426): warning: Regi
                  ;GLOBAL REGISTER VARIABLES INITIALIZATION
                  __REG_VARS:
 000033 0000
-000034 0005      	.DB  0x0,0x0,0x5,0x0
+000034 0000      	.DB  0x0,0x0,0x0,0x0
 000035 0000
 000036 0000      	.DB  0x0,0x0,0x0,0x0
                  
                  _0x3:
-D:\kuliah\sem 3\lab ma\UAS\UAS-MA\AVR\Debug\List\uas-ma.asm(1469): warning: .cseg .db misalignment - padding zero byte
+C:\Users\Lenovo\Documents\KULIAH\E-LEARNING\SEMESTER 3\PRAKTEK MA\UAS\UAS-MA\AVR\Debug\List\uas-ma.asm(1469): warning: .cseg .db misalignment - padding zero byte
 000037 0001      	.DB  0x1
                  _0x4:
-D:\kuliah\sem 3\lab ma\UAS\UAS-MA\AVR\Debug\List\uas-ma.asm(1471): warning: .cseg .db misalignment - padding zero byte
+C:\Users\Lenovo\Documents\KULIAH\E-LEARNING\SEMESTER 3\PRAKTEK MA\UAS\UAS-MA\AVR\Debug\List\uas-ma.asm(1471): warning: .cseg .db misalignment - padding zero byte
 000038 0001      	.DB  0x1
                  _0x5:
-D:\kuliah\sem 3\lab ma\UAS\UAS-MA\AVR\Debug\List\uas-ma.asm(1473): warning: .cseg .db misalignment - padding zero byte
+C:\Users\Lenovo\Documents\KULIAH\E-LEARNING\SEMESTER 3\PRAKTEK MA\UAS\UAS-MA\AVR\Debug\List\uas-ma.asm(1473): warning: .cseg .db misalignment - padding zero byte
 000039 0001      	.DB  0x1
                  _0x6:
 00003a 0100
@@ -1557,17 +1557,17 @@ D:\kuliah\sem 3\lab ma\UAS\UAS-MA\AVR\Debug\List\uas-ma.asm(1473): warning: .cse
 000072 206d
 000073 6425      	.DB  0x20,0x25,0x64,0x20,0x6D,0x20,0x25,0x64
 000074 7320
-D:\kuliah\sem 3\lab ma\UAS\UAS-MA\AVR\Debug\List\uas-ma.asm(1491): warning: .cseg .db misalignment - padding zero byte
+C:\Users\Lenovo\Documents\KULIAH\E-LEARNING\SEMESTER 3\PRAKTEK MA\UAS\UAS-MA\AVR\Debug\List\uas-ma.asm(1491): warning: .cseg .db misalignment - padding zero byte
 000075 0000      	.DB  0x20,0x73,0x0
                  _0x2020060:
-D:\kuliah\sem 3\lab ma\UAS\UAS-MA\AVR\Debug\List\uas-ma.asm(1493): warning: .cseg .db misalignment - padding zero byte
+C:\Users\Lenovo\Documents\KULIAH\E-LEARNING\SEMESTER 3\PRAKTEK MA\UAS\UAS-MA\AVR\Debug\List\uas-ma.asm(1493): warning: .cseg .db misalignment - padding zero byte
 000076 0001      	.DB  0x1
                  _0x2020000:
 000077 4e2d
 000078 4e41
 000079 4900
 00007a 464e      	.DB  0x2D,0x4E,0x41,0x4E,0x0,0x49,0x4E,0x46
-D:\kuliah\sem 3\lab ma\UAS\UAS-MA\AVR\Debug\List\uas-ma.asm(1496): warning: .cseg .db misalignment - padding zero byte
+C:\Users\Lenovo\Documents\KULIAH\E-LEARNING\SEMESTER 3\PRAKTEK MA\UAS\UAS-MA\AVR\Debug\List\uas-ma.asm(1496): warning: .cseg .db misalignment - padding zero byte
 00007b 0000      	.DB  0x0
                  _0x2040003:
 00007c c080      	.DB  0x80,0xC0
