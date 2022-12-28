@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.1.30  C:\Users\Lenovo\Documents\KULIAH\E-LEARNING\SEMESTER 3\PRAKTEK MA\UAS\UAS-MA\AVR\Debug\List\uas-ma.asm Wed Dec 28 16:48:30 2022
+AVRASM ver. 2.1.30  C:\Users\Lenovo\Documents\KULIAH\E-LEARNING\SEMESTER 3\PRAKTEK MA\UAS\UAS-MA\AVR\Debug\List\uas-ma.asm Wed Dec 28 17:00:52 2022
 
 C:\Users\Lenovo\Documents\KULIAH\E-LEARNING\SEMESTER 3\PRAKTEK MA\UAS\UAS-MA\AVR\Debug\List\uas-ma.asm(1417): warning: Register r4 already defined by the .DEF directive
 C:\Users\Lenovo\Documents\KULIAH\E-LEARNING\SEMESTER 3\PRAKTEK MA\UAS\UAS-MA\AVR\Debug\List\uas-ma.asm(1418): warning: Register r5 already defined by the .DEF directive
@@ -2095,10 +2095,10 @@ C:\Users\Lenovo\Documents\KULIAH\E-LEARNING\SEMESTER 3\PRAKTEK MA\UAS\UAS-MA\AVR
 00016a df8e      	RCALL _speaker
                  ; 0000 00E9 }
                  ; 0000 00EA 
-                 ; 0000 00EB delay_ms(70);
+                 ; 0000 00EB delay_ms(1200);
                  _0x22:
-00016b e4a6      	LDI  R26,LOW(70)
-00016c e0b0      	LDI  R27,0
+00016b eba0      	LDI  R26,LOW(1200)
+00016c e0b4      	LDI  R27,HIGH(1200)
 00016d d268      	RCALL _delay_ms
                  ; 0000 00EC }
                  ; 0000 00ED if (!on){
@@ -2110,9 +2110,9 @@ C:\Users\Lenovo\Documents\KULIAH\E-LEARNING\SEMESTER 3\PRAKTEK MA\UAS\UAS-MA\AVR
 000172 df36      	RCALL _ubahsec
                  ; 0000 00EF ubahmins();
 000173 df47      	RCALL _ubahmins
-                 ; 0000 00F0 delay_ms(20);
-000174 e1a4      	LDI  R26,LOW(20)
-000175 e0b0      	LDI  R27,0
+                 ; 0000 00F0 delay_ms(260);
+000174 e0a4      	LDI  R26,LOW(260)
+000175 e0b1      	LDI  R27,HIGH(260)
 000176 d25f      	RCALL _delay_ms
                  ; 0000 00F1 }
                  ; 0000 00F2 ubahlap();

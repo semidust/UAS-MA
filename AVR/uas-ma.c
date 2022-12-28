@@ -232,12 +232,12 @@ while (1)
         speaker();
        }
 
-       delay_ms(70);
+       delay_ms(1200);
       }
       if (!on){
           ubahsec();
           ubahmins();
-          delay_ms(20);
+          delay_ms(260);
       }
       ubahlap();
       tampildata();

@@ -2013,10 +2013,10 @@ _0x21:
 	RCALL _speaker
 ; 0000 00E9 }
 ; 0000 00EA 
-; 0000 00EB delay_ms(70);
+; 0000 00EB delay_ms(1200);
 _0x22:
-	LDI  R26,LOW(70)
-	LDI  R27,0
+	LDI  R26,LOW(1200)
+	LDI  R27,HIGH(1200)
 	RCALL _delay_ms
 ; 0000 00EC }
 ; 0000 00ED if (!on){
@@ -2028,9 +2028,9 @@ _0x1C:
 	RCALL _ubahsec
 ; 0000 00EF ubahmins();
 	RCALL _ubahmins
-; 0000 00F0 delay_ms(20);
-	LDI  R26,LOW(20)
-	LDI  R27,0
+; 0000 00F0 delay_ms(260);
+	LDI  R26,LOW(260)
+	LDI  R27,HIGH(260)
 	RCALL _delay_ms
 ; 0000 00F1 }
 ; 0000 00F2 ubahlap();
