@@ -84,6 +84,7 @@ void ubahlap()
        lap = 0;
        n = 0;
  }
+ delay_ms(20);
 }
 
 void speaker ()
