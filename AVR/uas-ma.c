@@ -43,6 +43,15 @@ void tampildata(){
  PORTD = angka[sec];
 }
 
+void lap(){
+ lcd_clear();
+ lcd_gotoxy(0,0);
+ 
+ for (i=1; i<=4; i++) {
+    lcd_printf("LAP %d : %d m %d s\n",i,angka[mins],angka[sec]);
+ } 
+}
+
 
 void main(void)
 {
@@ -183,7 +192,12 @@ while (1)
         sec = 0;
        }
        delay_ms(70);
+        
+       if (PINA.3 ==  0) {
+        lap();
+       }
       }
       tampildata();
       }
+      
 }
