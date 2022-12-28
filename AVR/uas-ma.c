@@ -212,6 +212,7 @@ while (1)
       if (!on){
           ubahsec();  
           ubahmins();
+          delay_ms(40);
       }
       tampildata();
       }

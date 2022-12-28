@@ -1,4 +1,4 @@
-VERSION:3 SOURCE_TIMESTAMP:559BADB5
+VERSION:3 SOURCE_TIMESTAMP:559C7D67
 NODE:I LEVEL:0 LINE:2 "C:\cvavreval\inc\mega32.h"
 NODE:I LEVEL:0 LINE:3 "C:\cvavreval\inc\stdbool.h"
 NODE:I LEVEL:0 LINE:4 "C:\cvavreval\inc\delay.h"
@@ -21,4 +21,6 @@ LEVEL:1 LINE:21 ICON:S "lap_s"
 LEVEL:1 LINE:22 ICON:S "status"
 NODE:V LEVEL:0 LINE:26 "angka -> RAM:????"
 NODE:F LEVEL:0 LINE:41 "tampildata(void)"
-NODE:F LEVEL:0 LINE:47 "main(void)"
+NODE:F LEVEL:0 LINE:46 "ubahsec(void)"
+NODE:F LEVEL:0 LINE:59 "ubahmins(void)"
+NODE:F LEVEL:0 LINE:72 "main(void)"
