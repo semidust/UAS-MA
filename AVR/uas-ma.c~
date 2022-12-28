@@ -2,15 +2,25 @@
 #include <mega32.h>
 #include <stdbool.h>
 #include <delay.h>
+#include <string.h>
+#include <stdlib.h>
 
 // Alphanumeric LCD functions
 #include <alcd.h>
 
 // Declare your global variables here
-unsigned short min = 59, sec = 59;
-bool on = true,   prev_on  = true,
-     run = false, prev_run = false;
+short mins = 0, sec = 5, prev1, prev2;
+bool on = true,   prev_on  = false;
+bool lap_btn = 1;
 bool toggle = 1;
+
+char str1[16];
+char str2[16];
+
+struct lap{
+  short lap_m, lap_s;
+  bool status;
+};
 
 //led
 unsigned char angka [100]={
@@ -29,23 +39,21 @@ unsigned char angka [100]={
 
 
 void tampildata(){
- PORTB = angka[min];
+ PORTB = angka[mins];
  PORTD = angka[sec];
 }
 
-void tampilstatus(bool ons, bool runs){
- lcd_clear();
-
-}
 
 void main(void)
 {
 // Declare your local variables here
+prev1 = mins;
+prev2 = sec;
 
 // Input/Output Ports initialization
 // Port A initialization
 // Function: Bit7=In Bit6=In Bit5=In Bit4=In Bit3=In Bit2=In Bit1=In Bit0=In 
-DDRA=(0<<DDA7) | (0<<DDA6) | (0<<DDA5) | (0<<DDA4) | (0<<DDA3) | (0<<DDA2) | (0<<DDA1) | (0<<DDA0);
+DDRA=0xFF;
 // State: Bit7=T Bit6=T Bit5=T Bit4=T Bit3=T Bit2=T Bit1=T Bit0=T 
 PORTA=0xFF;
 
@@ -161,11 +169,29 @@ while (1)
       {
       on = !PINA.1;
       
-      if (prev_on != on || prev_run != run){
+      if(prev_on != on){
+       if (on) strcpy(str1, "Timer is running..");
+       else strcpy(str1, "Timer has stopped."); 
+       
+       lcd_gotoxy(0,0);
+       lcd_puts(str1);
        
        prev_on = on;
       }
       
+      //clock logic
+      if (on && !(mins <= 0 && sec <= 0)){
+       sec--;
+       
+       if (sec < 0){
+        mins--;
+        sec = 59;
+       }
+       if (mins < 0){
+        sec = 0;
+       }
+       delay_ms(70);
+      }
       tampildata();
       }
 }
