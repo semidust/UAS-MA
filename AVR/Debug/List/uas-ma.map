@@ -3,12 +3,13 @@ Variable                                                                        
 ------------------------------------------------------------------------------------------------
 prev2                                                                             0x0260       2
 on                                                                                0x0262       1
-angka                                                                             0x0263     100
-_seed (stdlib.lib)                                                                0x02C7       4
-_base_y (alcd.lib)                                                                0x02CB       4
-_lcd_x                                                                            0x02CF       1
-_lcd_y                                                                            0x02D0       1
-_lcd_maxx                                                                         0x02D1       1
+nada                                                                              0x0263       2
+angka                                                                             0x0265      60
+_seed (stdlib.lib)                                                                0x02A1       4
+_base_y (alcd.lib)                                                                0x02A5       4
+_lcd_x                                                                            0x02A9       1
+_lcd_y                                                                            0x02AA       1
+_lcd_maxx                                                                         0x02AB       1
 
 EEPROM Allocation [bytes]
 Variable                                                                          Address   Size
@@ -26,19 +27,20 @@ prev1                                                                           
 FLASH Allocation [words]
 Function                                                                          Address   Size
 ------------------------------------------------------------------------------------------------
-tampildata                                                                        0x000BA      3
-ubahsec                                                                           0x000BD     18
-ubahmins                                                                          0x000CF     18
-ubahlap                                                                           0x000E1     44
-main                                                                              0x0010D    102
-strlen                                                                            0x00173     12
-strlenf                                                                           0x0017F     13
-_lcd_write_nibble_G102                                                            0x0018C     21
-_lcd_write_data                                                                   0x001A1     13
-lcd_gotoxy                                                                        0x001AE     20
-lcd_clear                                                                         0x001C2     12
-lcd_putchar                                                                       0x001CE     30
-lcd_init                                                                          0x001EC     44
-_print_G105                                                                       0x00218    296
-put_lcd_G105                                                                      0x00340     14
-lcd_printf                                                                        0x0034E     39
+tampildata                                                                        0x000A6      3
+ubahsec                                                                           0x000A9     18
+ubahmins                                                                          0x000BB     18
+ubahlap                                                                           0x000CD     44
+speaker                                                                           0x000F9     27
+main                                                                              0x00114    103
+strlen                                                                            0x0017B     12
+strlenf                                                                           0x00187     13
+_lcd_write_nibble_G102                                                            0x00194     21
+_lcd_write_data                                                                   0x001A9     13
+lcd_gotoxy                                                                        0x001B6     20
+lcd_clear                                                                         0x001CA     12
+lcd_putchar                                                                       0x001D6     30
+lcd_init                                                                          0x001F4     44
+_print_G105                                                                       0x00220    296
+put_lcd_G105                                                                      0x00348     10
+lcd_printf                                                                        0x00352     39
