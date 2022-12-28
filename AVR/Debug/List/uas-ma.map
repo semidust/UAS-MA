@@ -1,12 +1,14 @@
 RAM Allocation [bytes]
 Variable                                                                          Address   Size
 ------------------------------------------------------------------------------------------------
-angka                                                                             0x0260     100
-_seed (stdlib.lib)                                                                0x02C4       4
-_base_y (alcd.lib)                                                                0x02C8       4
-_lcd_x                                                                            0x02CC       1
-_lcd_y                                                                            0x02CD       1
-_lcd_maxx                                                                         0x02CE       1
+prev2                                                                             0x0260       2
+on                                                                                0x0262       1
+angka                                                                             0x0263     100
+_seed (stdlib.lib)                                                                0x02C7       4
+_base_y (alcd.lib)                                                                0x02CB       4
+_lcd_x                                                                            0x02CF       1
+_lcd_y                                                                            0x02D0       1
+_lcd_maxx                                                                         0x02D1       1
 
 EEPROM Allocation [bytes]
 Variable                                                                          Address   Size
@@ -17,19 +19,26 @@ Variable                                                                        
 ------------------------------------------------------------------------------------------------
 mins                                                                              R4,R5        2
 sec                                                                               R6,R7        2
-prev1                                                                             R8,R9        2
-prev2                                                                             R10,R11      2
-on                                                                                R13          1
-prev_on                                                                           R12          1
+lap                                                                               R8,R9        2
+n                                                                                 R10,R11      2
+prev1                                                                             R12,R13      2
 
 FLASH Allocation [words]
 Function                                                                          Address   Size
 ------------------------------------------------------------------------------------------------
-tampildata                                                                        0x000AD      3
-ubahsec                                                                           0x000B0     18
-ubahmins                                                                          0x000C2     18
-main                                                                              0x000D4     94
-_lcd_write_nibble_G102                                                            0x00132     21
-_lcd_write_data                                                                   0x00147     13
-lcd_clear                                                                         0x00154     12
-lcd_init                                                                          0x00160     44
+tampildata                                                                        0x000BA      3
+ubahsec                                                                           0x000BD     18
+ubahmins                                                                          0x000CF     18
+ubahlap                                                                           0x000E1     44
+main                                                                              0x0010D    102
+strlen                                                                            0x00173     12
+strlenf                                                                           0x0017F     13
+_lcd_write_nibble_G102                                                            0x0018C     21
+_lcd_write_data                                                                   0x001A1     13
+lcd_gotoxy                                                                        0x001AE     20
+lcd_clear                                                                         0x001C2     12
+lcd_putchar                                                                       0x001CE     30
+lcd_init                                                                          0x001EC     44
+_print_G105                                                                       0x00218    296
+put_lcd_G105                                                                      0x00340     14
+lcd_printf                                                                        0x0034E     39

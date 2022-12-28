@@ -4,12 +4,13 @@
 #include <delay.h>
 #include <string.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 // Alphanumeric LCD functions
 #include <alcd.h>
 
 // Declare your global variables here
-short mins = 0, sec = 5, prev1, prev2;
+short mins = 0, sec = 5, lap = 0, n = 0, prev1, prev2;
 bool on = true,   prev_on  = false;
 bool lap_btn = 1;
 bool toggle = 1;
@@ -67,6 +68,21 @@ void ubahmins()
         mins = mins -1;   
         PORTB = angka[mins];
   }
+}
+
+void ubahlap()
+{
+ if (PINA.2==0) {
+       lcd_gotoxy(0,n);
+       lap = lap + 1;
+       lcd_printf("LAP %d : %d m %d s",lap,angka[mins],angka[sec]);
+       n = n + 1; 
+ }
+ else if (PINA.3==0) {
+       lcd_clear();
+       lap = 0;
+       n = 0;
+ }
 }
 
 void main(void)
@@ -212,8 +228,9 @@ while (1)
       if (!on){
           ubahsec();  
           ubahmins();
-          delay_ms(100);
+          delay_ms(40);
       }
+      ubahlap();
       tampildata();
       }
 }
