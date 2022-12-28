@@ -52,6 +52,31 @@ void lap(){
  } 
 }
 
+void ubahsec() 
+{
+  if (PINA.4==0) {     
+        if (sec==59) return;
+        sec = sec + 1;  
+        PORTD = angka[sec];
+  }
+  else if (PINA.5==0) {
+        sec = sec -1;  
+        PORTD = angka[sec];
+  }
+}
+
+void ubahmins() 
+{
+  if (PINA.6==0) {       
+        if (mins==59) return;
+        mins = mins + 1; 
+        PORTB = angka[mins];
+  }
+  else if (PINA.7==0) {
+        mins = mins -1;   
+        PORTB = angka[mins];
+  }
+}
 
 void main(void)
 {
@@ -196,6 +221,11 @@ while (1)
        if (PINA.3 ==  0) {
         lap();
        }
+      }   
+      if (!on){
+          ubahsec();  
+          ubahmins();
+          delay_ms(40);
       }
       tampildata();
       }

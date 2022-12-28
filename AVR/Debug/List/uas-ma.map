@@ -25,9 +25,11 @@ prev_on                                                                         
 FLASH Allocation [words]
 Function                                                                          Address   Size
 ------------------------------------------------------------------------------------------------
-tampildata                                                                        0x000AD     13
-main                                                                              0x000BA     87
-_lcd_write_nibble_G102                                                            0x00111     21
-_lcd_write_data                                                                   0x00126     13
-lcd_clear                                                                         0x00133     12
-lcd_init                                                                          0x0013F     44
+tampildata                                                                        0x000AD      3
+ubahsec                                                                           0x000B0     18
+ubahmins                                                                          0x000C2     18
+main                                                                              0x000D4     94
+_lcd_write_nibble_G102                                                            0x00132     21
+_lcd_write_data                                                                   0x00147     13
+lcd_clear                                                                         0x00154     12
+lcd_init                                                                          0x00160     44
